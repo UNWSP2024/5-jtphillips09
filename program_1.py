@@ -10,8 +10,7 @@ def kilometer_conversion(kilometers):
     ######################
     # WRITE YOUR CODE HERE
     ######################    
-
-
+    miles = kilometers * 0.6214
     # Return the variable to the calling function
     return miles
 
@@ -21,6 +20,8 @@ def kilometer_conversion(kilometers):
 if __name__ == '__main__':
     # Get User Input
     print('in main')
+    kilometers = float(input("Enter distance in kilometers: "))
     # Call kilometer_conversion, don't forget to pass in the kilometer parameter!
-    
+    miles = kilometer_conversion(kilometers)
     # Display the miles
+    print(f"{kilometers} kilometers is equal to {miles} miles.")
